@@ -57,13 +57,15 @@ public_users.get('/author/:author', function (req, res) {
 
 // Get all books based on title
 public_users.get('/title/:title', function (req, res) {
+
     const title = req.params.title;
 
-    const bookList = Object.values(books).filter(
+    const booksByTitle = Object.values(books).filter(
         (book) => book.title.toLowerCase() === title.toLowerCase()
     );
 
-    return res.status(200).json(bookList);
+    return res.status(200).json(booksByTitle);
+
 });
 
 // Get book review
