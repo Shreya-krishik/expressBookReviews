@@ -1,0 +1,11 @@
+curl https://api.github.com/repos/Shreya-krishik/expressBookReviews
+
+{
+  "id": 123456789,
+  "name": "expressBookReviews",
+  "full_name": "Shreya-krishik/expressBookReviews",
+  "fork": true,
+  "parent": {
+    "full_name": "ibm-developer-skills-network/expressBookReviews"
+  }
+}
